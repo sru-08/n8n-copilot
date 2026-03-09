@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N8N Copilot</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+     	html, body {
+            width: 600px;
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <h1>🚀 N8N Copilot</h1>
+            <p>Generate n8n workflows with AI</p>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="messages-area" id="messagesArea">
+            <div class="system-message">
+                👋 Welcome! Describe the workflow you want to create, and I'll generate the JSON for you.
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="messageInput" 
+                placeholder="e.g., Create a workflow that sends emails..." 
+                class="message-input"
+            >
+            <button id="sendButton" class="send-button">Send</button>
+        </div>
+
+        <!-- Status -->
+        <div class="status-bar" id="statusBar"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

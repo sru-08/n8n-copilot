@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "N8N Copilot",
+  "version": "1.0.0",
+  "description": "Generate n8n workflows with AI assistance",
+  
+  "permissions": [
+    "storage"
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "N8N Copilot"
+  },
+  
+  "host_permissions": [
+    "http://localhost/*"
+  ]
+}
